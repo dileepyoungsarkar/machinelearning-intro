@@ -13,3 +13,34 @@ y1=sin(2*pi*4*t);
 // how to get indiviual plot of fig 1;
 figure(1);plot(t,y1);//sin
  figure(2); plot(t,y2);//cos
+
+ //use of for loop;
+ for i=1:10,
+v(i)=2^i;
+end;
+
+//use of if and while loop;
+ i=1;
+>> while true
+v(i)=999;
+i=i+1;
+if i==6,
+break;
+end;
+end;
+
+
+/// use of else if..
+if  v(1)==1,
+disp('the value 1');
+else if v(1)==2,
+disp ('the value 1');
+else 
+disp('happy')
+end;
+
+//how to declare function
+function [y1,y2]=squareAndCubeThisNumber(x)
+
+y1=x^2;
+y2=x^3;
