@@ -7,3 +7,9 @@ y1=sin(2*pi*4*t);
  ylabel('value')
  legend('sin','cos')
  title('myplot')
+
+
+
+// how to get indiviual plot of fig 1;
+figure(1);plot(t,y1);//sin
+ figure(2); plot(t,y2);//cos
